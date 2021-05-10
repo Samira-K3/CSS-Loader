@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.section {
+    display: none;
+    transition: opacity 1s ease-in;
+}

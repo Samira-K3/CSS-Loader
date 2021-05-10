@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+#loa {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center; 
+}
+.load {
+    height: 50px;
+    transform-origin: bottom center;
+    animation: rot 3s linear infinite;
+}
+.circle {
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: scale(0);
+    margin: -10px;
+    animation: grow 1.5s linear infinite;
+}
+.circle:nth-child(2) {
+    background-color: chocolate;
+    animation-delay: 0.75s;
+}
+@keyframes rot {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+}
